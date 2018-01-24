@@ -1,12 +1,24 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/hscore/hscore"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "热映中"
+      },
+      {
+        "pagePath": "pages/hscore/hscore",
+        "text": "高分榜"
+      }
+    ]
   }
 }

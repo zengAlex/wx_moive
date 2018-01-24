@@ -15,7 +15,7 @@
   font-size: 36rpx;
   margin-left: 20rpx;
 }
-
-.imageItem{
-  float: left;
+.imgShare{
+  width: 320rpx;
+  height: 320rpx;
 }

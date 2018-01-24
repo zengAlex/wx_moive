@@ -1,22 +1,21 @@
 <!--index.wxml-->
-<view class="container">
-  <!-- <view class="userinfo">
+<!-- <view class="container"> -->
+   <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}，欢迎来到影推~</text>
     </block>
-  </view> -->
+  </view>  -->
 
   <!--热映榜-->
   <scroll-view scroll-y class="page_ry">
     <view class="imgArray" wx:for="{{imgArray}}" wx:for-item="item" wx:key="imgArray">
         <view class="section__ctn">
-            <image mode="aspectFit" src="{{item.images.medium}}"></image>
+          <image class="imgShare" mode="aspectFit" src="{{item.images.small}}"></image>
+          <text class="name">{{item.title}}</text>
+          <text class="time">{{item.year}}</text>
         </view>
     </view>
   </scroll-view> 
-
-
-
-</view>
+<!-- </view> -->

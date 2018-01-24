@@ -30,9 +30,6 @@ Page({
           hasUserInfo: true
         })
       }
-
-      //请求豆瓣数据
-      this.getDataArray();
     } else {
       // 在没有 open-type=getUserInfo 版本的兼容处理
       wx.getUserInfo({
@@ -45,6 +42,8 @@ Page({
         }
       })
     }
+    //请求豆瓣数据
+    this.getDataArray();
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo
